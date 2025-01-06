@@ -1,9 +1,9 @@
 import pickle
 import streamlit as st
-from streamlit_option_menu import option_menu
+from streamlit_option_menu import option
 
 with st.sidebar:
-    selected = option_menu("Mesin Learning", ["Prediksi Depresi Mahasiswa"], 
+    selected = option("Mesin Learning", ["Prediksi Depresi Mahasiswa"], 
         icons=['house'], default_index=0)
     selected
 
