@@ -105,5 +105,5 @@ if (add_selectbox == "Email"):
              
 elif (add_selectbox == "Cuaca"):
    st.title('Haerul blm merancang')
-else (add_selectbox == "Cuaca"):
+else :
    st.title('Haerul blm merancang')
