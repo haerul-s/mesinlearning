@@ -48,7 +48,8 @@ with col1:
         DurasiTidur = 2
    else :
       DurasiTidur = 3
-with col1:
+      
+with col2:
    KebiasaanDiet = st.selectbox('Masukan Kebiasaan Diet',["Tidak Sehat","Sedang","Sehat"])
    if KebiasaanDiet == "Tidak Sehat":
       KebiasaanDiet = 2
