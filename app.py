@@ -3,8 +3,8 @@ import streamlit as st
 
 with st.sidebar:
    add_selectbox = st.sidebar.selectbox(
-       "How would you like to be contacted?",
-       ("Email", "Home phone", "Mobile phone")
+       "Apa yang mau anda prediksi?",
+       ("Status Depresi", "Cuaca", "Penyakit Jantung")
    )
 
 if (add_selectbox == "Email"):
@@ -102,3 +102,8 @@ if (add_selectbox == "Email"):
             st.warning('Status Mengalami Depresi', icon="⚠️")
           else :
             st.success('Status Tidak Mengalami Depresi', icon="✅")
+             
+elif (add_selectbox == "Cuaca"):
+   st.title('Haerul blm merancang')
+else (add_selectbox == "Cuaca"):
+   st.title('Haerul blm merancang')
