@@ -86,9 +86,9 @@ with col2:
 
    predict = ''
    
-   with col3:
-      if st.button('Proses'):
-          predict = model.predict(
-              [[Jeniskelamin, Usia, TekananAkademis, KepuasanBelajar, DurasiTidur, KebiasaanDiet, PernahkahAnda, JamBelajar, StresKeuangan, RiwayatKeluarga]]
-          )
-          st.write ('Status Mengalami Depresi : ', predict)
+with col3:
+   if st.button('Proses'):
+       predict = model.predict(
+           [[Jeniskelamin, Usia, TekananAkademis, KepuasanBelajar, DurasiTidur, KebiasaanDiet, PernahkahAnda, JamBelajar, StresKeuangan, RiwayatKeluarga]]
+       )
+       st.write ('Status Mengalami Depresi : ', predict)
