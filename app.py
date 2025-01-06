@@ -1,16 +1,6 @@
 import pickle
 import streamlit as st
 
-pages = {
-    "Mesin Learning": [
-        st.Page("app.py", title="Prediksi Depresi"),
-        st.Page("manage_account.py", title="Prediksi Cuaca"),
-    ],
-  
-}
-pg = st.navigation(pages)
-pg.run()
-
 model = pickle.load(open('model.pkl', 'rb'))
 
 st.title('Prediksi Depresi')
