@@ -91,4 +91,4 @@ with col3:
        predict = model.predict(
            [[Jeniskelamin, Usia, TekananAkademis, KepuasanBelajar, DurasiTidur, KebiasaanDiet, PernahkahAnda, JamBelajar, StresKeuangan, RiwayatKeluarga]]
        )
-       st.write ('Status Mengalami Depresi : ', predict)
+       st.succes ('Status Mengalami Depresi : ', predict)
