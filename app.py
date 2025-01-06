@@ -91,8 +91,8 @@ with col3:
        predict = model.predict(
            [[Jeniskelamin, Usia, TekananAkademis, KepuasanBelajar, DurasiTidur, KebiasaanDiet, PernahkahAnda, JamBelajar, StresKeuangan, RiwayatKeluarga]]
        )
-      if predict == "YA":
+       if predict == "YA":
          st.write ('Status Mengalami Depresi : ', predict)
          st.warning('Status Mengalami Depresi', icon="⚠️")
-      else :
+       else :
          st.success('Status Tidak Mengalami Depresi', icon="✅")
