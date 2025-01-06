@@ -4,7 +4,7 @@ add_selectbox = st.sidebar.selectbox(
     "Apa yang mau anda prediksi",
     ("Depresi", "Cuaca")
 )
-if(selected=='Depresi'):
+if(selectbox=='Depresi'):
     model = pickle.load(open('model.pkl', 'rb'))
     
     st.title('Prediksi Depresi')
