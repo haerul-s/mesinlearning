@@ -92,3 +92,4 @@ with col3:
            [[Jeniskelamin, Usia, TekananAkademis, KepuasanBelajar, DurasiTidur, KebiasaanDiet, PernahkahAnda, JamBelajar, StresKeuangan, RiwayatKeluarga]]
        )
        st.write ('Status Mengalami Depresi : ', predict)
+       st.success('This is a success message!', icon="✅")
