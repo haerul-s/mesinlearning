@@ -7,7 +7,7 @@ with st.sidebar:
        ("Status Depresi", "Cuaca", "Penyakit Jantung")
    )
 
-if (add_selectbox == "Email"):
+if (add_selectbox == "Status Depresi"):
    model = pickle.load(open('model.pkl', 'rb'))
    
    st.title('Prediksi Depresi')
@@ -104,6 +104,6 @@ if (add_selectbox == "Email"):
             st.success('Status Tidak Mengalami Depresi', icon="✅")
              
 elif (add_selectbox == "Cuaca"):
-   st.title('Haerul blm merancang')
+   st.title('Haerul blm merancang model Cuaca')
 else :
-   st.title('Haerul blm merancang')
+   st.title('Haerul blm merancang model Penyakit')
