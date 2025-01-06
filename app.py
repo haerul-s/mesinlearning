@@ -12,8 +12,41 @@ with col1:
       Jeniskelamin = 1
    else:
       Jeniskelamin = 0
+      
+   DurasiTidur = st.selectbox('Masukan Durasi Tidur',["Kurang dari 5 jam","5-6 jam","7-8 jam","Lebih dari 8 jam"])
+   if DurasiTidur == "5-6 jam":
+      DurasiTidur = 0
+   elif DurasiTidur == "7-8 jam": 
+        DurasiTidur = 1
+   elif DurasiTidur == "Kurang dari 5 jam": 
+        DurasiTidur = 2
+   else :
+      DurasiTidur = 3
 
-   Usia = st.slider('Masukan Usia',18,35)
+   KebiasaanDiet = st.selectbox('Masukan Kebiasaan Diet',["Tidak Sehat","Sedang","Sehat"])
+   if KebiasaanDiet == "Tidak Sehat":
+      KebiasaanDiet = 2
+   elif KebiasaanDiet == "Sedang": 
+        KebiasaanDiet = 0
+   else :
+      KebiasaanDiet = 1
+
+   PernahkahAnda = st.selectbox('Pernahkah Anda Memiliki Perasaan Untuk Bunuh Diri?',["Tidak","Ya"])
+   if PernahkahAnda == "Tidak":
+       PernahkahAnda = 0
+   else:
+       PernahkahAnda = 1
+
+   RiwayatKeluarga = st.selectbox('Riwayat Keluarga dengan Penyakit Mental',["Tidak","Ya"])
+   if RiwayatKeluarga == "Tidak":
+       RiwayatKeluarga = 0
+   else:
+       RiwayatKeluarga = 1     
+ 
+with col2:
+   Usia = st.slider('Masukan Usia',18,35)   
+
+   JamBelajar	= st.slider('Masukan Jam Belajar',1,12)
 
    TekananAkademis	= st.select_slider('Masukan Tekanan Akademis',["Sangat Tidak Tertekan","Tidak Tertekan","Cukup Tertekan","Tertekan","Sangat Tertekan"])
    if TekananAkademis == "Sangat Tertekan":
@@ -38,33 +71,6 @@ with col1:
         KepuasanBelajar = 2
    else :
       KepuasanBelajar = 1 
-    
-   DurasiTidur = st.selectbox('Masukan Durasi Tidur',["Kurang dari 5 jam","5-6 jam","7-8 jam","Lebih dari 8 jam"])
-   if DurasiTidur == "5-6 jam":
-      DurasiTidur = 0
-   elif DurasiTidur == "7-8 jam": 
-        DurasiTidur = 1
-   elif DurasiTidur == "Kurang dari 5 jam": 
-        DurasiTidur = 2
-   else :
-      DurasiTidur = 3
-      
-with col2:
-   KebiasaanDiet = st.selectbox('Masukan Kebiasaan Diet',["Tidak Sehat","Sedang","Sehat"])
-   if KebiasaanDiet == "Tidak Sehat":
-      KebiasaanDiet = 2
-   elif KebiasaanDiet == "Sedang": 
-        KebiasaanDiet = 0
-   else :
-      KebiasaanDiet = 1
-   
-   PernahkahAnda = st.selectbox('Pernahkah Anda Memiliki Perasaan Untuk Bunuh Diri?',["Tidak","Ya"])
-   if PernahkahAnda == "Tidak":
-       PernahkahAnda = 0
-   else:
-       PernahkahAnda = 1
-
-   JamBelajar	= st.slider('Masukan Jam Belajar',1,12)
 
    StresKeuangan	= st.select_slider('Masukan Stres Keuangan',["Sangat Tidak Stres","Tidak Stres","Cukup Stres","Stres","Sangat Stres"])
    if StresKeuangan == "Sangat Stres":
@@ -77,13 +83,6 @@ with col2:
         StresKeuangan = 2
    else :
       StresKeuangan = 1
-
-   RiwayatKeluarga = st.selectbox('Riwayat Keluarga dengan Penyakit Mental',["Tidak","Ya"])
-   if RiwayatKeluarga == "Tidak":
-       RiwayatKeluarga = 0
-   else:
-       RiwayatKeluarga = 1    
-
 
    predict = ''
    
