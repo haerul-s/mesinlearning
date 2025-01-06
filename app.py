@@ -5,7 +5,7 @@ model = pickle.load(open('model.pkl', 'rb'))
 
 st.title('Prediksi Depresi')
 
-col1, col2 = st.columns(2)
+col1, col2, col3 = st.columns(3)
 with col1:
    Jeniskelamin = st.selectbox('Masukan Jenis Kelamin',["Pria","Perempuan"])
    if Jeniskelamin == "Pria":
@@ -86,7 +86,7 @@ with col2:
 
    predict = ''
    
-   
+   with col3:
    if st.button('Proses'):
        predict = model.predict(
            [[Jeniskelamin, Usia, TekananAkademis, KepuasanBelajar, DurasiTidur, KebiasaanDiet, PernahkahAnda, JamBelajar, StresKeuangan, RiwayatKeluarga]]
