@@ -104,6 +104,7 @@ if (add_selectbox == "Status Depresi"):
           else :
             st.success('Status Tidak Mengalami Depresi', icon="✅")
             st.toast('Tetap Jaga Kesehatan!', icon='😍')
+            st.snow()
              
 elif (add_selectbox == "Cuaca"):
    st.title('Haerul blm merancang model Cuaca')
