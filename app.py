@@ -100,9 +100,10 @@ if (add_selectbox == "Status Depresi"):
           )
           if predict == "Ya":         
             st.warning('Status Mengalami Depresi', icon="⚠️")
+            st.toast('Segera Konsultasi ke Dokter!', icon='🚨')
           else :
             st.success('Status Tidak Mengalami Depresi', icon="✅")
-            st.toast('Your edited image was saved!', icon='😍')
+            st.toast('Tetap Jaga Kesehatan!', icon='😍')
              
 elif (add_selectbox == "Cuaca"):
    st.title('Haerul blm merancang model Cuaca')
