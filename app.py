@@ -102,6 +102,7 @@ if (add_selectbox == "Status Depresi"):
             st.warning('Status Mengalami Depresi', icon="⚠️")
           else :
             st.success('Status Tidak Mengalami Depresi', icon="✅")
+            st.toast('Your edited image was saved!', icon='😍')
              
 elif (add_selectbox == "Cuaca"):
    st.title('Haerul blm merancang model Cuaca')
